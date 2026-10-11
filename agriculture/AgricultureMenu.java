@@ -1,4 +1,15 @@
-// Menu-driven program for Agriculture inheritance examples
+/*
+ Author         : Vijaya Masekar
+ Roll Number    : 2657
+ Subject        : Object Oriented Technology
+ Assignment     : Agriculture Management System
+
+ DESCRIPTION:
+ This is a Menu-Driven Agriculture Management System.
+ It allows the user to explore different types of inheritance
+ such as Single, Multiple, Multilevel, Hierarchical, and Hybrid
+ inheritance using simple agriculture examples.
+*/
 
 import java.util.Scanner;
 

@@ -1,4 +1,15 @@
-// Menu-driven program to navigate all inheritance types
+/*
+ Author         : Vijaya Masekar
+ Roll Number    : 2657
+ Subject        : Object Oriented Technology
+ Assignment     : Tourism Management System
+
+ DESCRIPTION:
+ This is a Menu-Driven Tourism Management System.
+ It allows the user to explore different types of inheritance
+ such as Single, Multiple, Multilevel, Hierarchical, and Hybrid
+ inheritance using simple tourism examples.
+*/
 import java.util.Scanner;
 
 public class TourismMenu {
