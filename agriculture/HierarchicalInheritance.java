@@ -1,35 +1,39 @@
-// Hierarchical Inheritance
-// One parent class has multiple child classes
-// Agriculture Example: Farm -> CropFarm and DairyFarm
+// Hierarchical Inheritance: Multiple child classes inherit from one parent.
+// Example: Farm -> CropFarm and DairyFarm.
 
-class Farm {
+class HierarchicalFarm {
     String farmName;
 
+    // Displays the common farm information.
     void showFarm() {
-        System.out.println("Farm Name: " + farmName);
+        System.out.println("Farm Name              : " + farmName);
     }
 }
 
-class CropFarm extends Farm {
+class CropFarm extends HierarchicalFarm {
     String crop;
 
+    // Displays inherited farm details and crop information.
     void showCropFarm() {
         showFarm();
-        System.out.println("Crop: " + crop);
+        System.out.println("Crop                   : " + crop);
     }
 }
 
-class DairyFarm extends Farm {
+class DairyFarm extends HierarchicalFarm {
     int cows;
 
+    // Displays inherited farm details and the number of cows.
     void showDairyFarm() {
         showFarm();
-        System.out.println("Number of Cows: " + cows);
+        System.out.println("Number of Cows         : " + cows);
     }
 }
 
 public class HierarchicalInheritance {
-    public static void main(String[] args) {
+
+    // Creates both child-class objects and displays their details.
+    public static void demo() {
         CropFarm cropFarm = new CropFarm();
         cropFarm.farmName = "Green Crop Farm";
         cropFarm.crop = "Corn";
@@ -38,12 +42,23 @@ public class HierarchicalInheritance {
         dairyFarm.farmName = "Happy Dairy Farm";
         dairyFarm.cows = 25;
 
-        System.out.println("=== HIERARCHICAL INHERITANCE ===");
+        System.out.println(
+                "\n========== HIERARCHICAL INHERITANCE ==========");
 
-        System.out.println("\n[Crop Farm]");
+        // Displays the crop farm information.
+        System.out.println("\n--- Crop Farm ---");
         cropFarm.showCropFarm();
 
-        System.out.println("\n[Dairy Farm]");
+        // Displays the dairy farm information.
+        System.out.println("\n--- Dairy Farm ---");
         dairyFarm.showDairyFarm();
+
+        System.out.println(
+                "\nParent: HierarchicalFarm | Children: CropFarm, DairyFarm");
+    }
+
+    // Allows the example to run independently.
+    public static void main(String[] args) {
+        demo();
     }
 }
